@@ -1,0 +1,17 @@
+// package.json (inside the server/ directory)
+{
+  "name": "fashion-comparison-server",
+  "version": "1.0.0",
+  "description": "Server for Fashion Comparison Chrome Extension",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name", // Replace with your name
+  "license": "MIT", // Or your preferred license
+  "dependencies": {
+    "express": "^4.17.1", // Or the latest version
+    "node-fetch": "^2.6.1" // Or the latest version that works with your node.js version.
+  }
+}
