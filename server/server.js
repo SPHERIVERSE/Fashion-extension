@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post('/api/similar', async (req, res) => {
     const { prompt } = req.body;
-    const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBFs5PNrbFftA081RW2XbRPfMFAwsBx1fU'// Replace with Gemini API endpoint
+    const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBFs5PNrbFftA081RW2XbRPfMFAwsBx1fU'// Replace with Gemini API endpoint
 
     try {
         const response = await fetch(apiUrl, {
