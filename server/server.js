@@ -2,13 +2,13 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 const port = 3000;
-const apiKey = 'YOUR_GEMINI_API_KEY'; // Store this securely!
+const apiKey = 'AIzaSyBFs5PNrbFftA081RW2XbRPfMFAwsBx1fU'; // Store this securely!
 
 app.use(express.json());
 
 app.post('/api/similar', async (req, res) => {
     const { prompt } = req.body;
-    const apiUrl = 'YOUR_GEMINI_API_ENDPOINT'; // Replace with Gemini API endpoint
+    const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBFs5PNrbFftA081RW2XbRPfMFAwsBx1fU'// Replace with Gemini API endpoint
 
     try {
         const response = await fetch(apiUrl, {
